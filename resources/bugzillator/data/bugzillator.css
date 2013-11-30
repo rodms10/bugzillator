@@ -1,0 +1,22 @@
+#bugzillator-pane {
+    position: absolute;
+    background-color: #ccc;
+    border-radius: 5px;
+    margin-top: 2em;
+    padding: 5px 8px;
+    color: white;
+    font: 14px/16px sans-serif;
+    transition: opacity 400ms;
+    opacity: 0;
+}
+
+#bugzillator-pane:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-bottom-color: #ccc;
+    position: absolute;
+    left: 35px;
+    top: -20px;
+}

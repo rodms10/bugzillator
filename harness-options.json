@@ -1,0 +1,111 @@
+{
+ "enable_e10s": false, 
+ "is-sdk-bundled": true, 
+ "jetpackID": "jid0-p2FHQpTRD8B7Ryq3bLS0M6B7vo8@jetpack", 
+ "loader": "addon-sdk/lib/sdk/loader/cuddlefish.js", 
+ "main": "main", 
+ "mainPath": "bugzillator/main", 
+ "manifest": {
+  "bugzillaclient/bz": {
+   "docsSHA256": null, 
+   "jsSHA256": "0cea91c5e0bb64641d04871282c2c5ef71042f6da87f49f7b2d969ee1e7ab16a", 
+   "moduleName": "bz", 
+   "packageName": "bugzillaclient", 
+   "requirements": {
+    "addon-kit/request": "sdk/request"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "bugzillator/main": {
+   "docsSHA256": null, 
+   "jsSHA256": "61230456f59d1fde58b780cb88524b3d500ae7c6ca2a6aa5cc3294d630e8ebf7", 
+   "moduleName": "main", 
+   "packageName": "bugzillator", 
+   "requirements": {
+    "bz": "bugzillaclient/bz", 
+    "sdk/tabs": "sdk/tabs", 
+    "self": "sdk/self", 
+    "toolbarbutton": "toolbarbutton-extended/toolbarbutton"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "toolbarbutton-extended/toolbarbutton": {
+   "docsSHA256": null, 
+   "jsSHA256": "f7af5b8eaeebdfd197772990f110571505c95078838f2acaf3928cd46f9d0667", 
+   "moduleName": "toolbarbutton", 
+   "packageName": "toolbarbutton-extended", 
+   "requirements": {
+    "listen": "vold-utils/listen", 
+    "unload+": "vold-utils/unload+", 
+    "window-utils": "sdk/deprecated/window-utils"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "vold-utils/listen": {
+   "docsSHA256": null, 
+   "jsSHA256": "74057caf6a837e6c8a3e8e73762b1bc08e69e6e087bee5401580a9249a34701c", 
+   "moduleName": "listen", 
+   "packageName": "vold-utils", 
+   "requirements": {
+    "unload+": "vold-utils/unload+"
+   }, 
+   "sectionName": "lib"
+  }, 
+  "vold-utils/unload+": {
+   "docsSHA256": null, 
+   "jsSHA256": "0cc972b1ac0ccd44801915b8e3ece122087fe72073886a759c38b857a956c058", 
+   "moduleName": "unload+", 
+   "packageName": "vold-utils", 
+   "requirements": {
+    "unload": "sdk/system/unload"
+   }, 
+   "sectionName": "lib"
+  }
+ }, 
+ "metadata": {
+  "addon-sdk": {
+   "description": "Add-on development made easy.", 
+   "keywords": [
+    "javascript", 
+    "engine", 
+    "addon", 
+    "extension", 
+    "xulrunner", 
+    "firefox", 
+    "browser"
+   ], 
+   "license": "MPL 2.0", 
+   "name": "addon-sdk"
+  }, 
+  "bugzillaclient": {
+   "author": "jetpackexamples", 
+   "main": "lib/index", 
+   "name": "bugzillaclient", 
+   "version": "initial.rev21"
+  }, 
+  "bugzillator": {
+   "author": "rsilveira", 
+   "description": "Links to bugzilla everywhere.", 
+   "main": "main", 
+   "name": "bugzillator", 
+   "version": "initial.rev186"
+  }, 
+  "toolbarbutton-extended": {
+   "author": "Systemcluster", 
+   "description": "Extension of the Toolbar Button library by Eric Vold, combined multiple efforts into one library.", 
+   "main": "lib/index", 
+   "name": "toolbarbutton-extended", 
+   "version": "0.1.rev30"
+  }, 
+  "vold-utils": {
+   "author": "erikvold", 
+   "main": "lib/index", 
+   "name": "vold-utils", 
+   "version": "v1.3"
+  }
+ }, 
+ "name": "bugzillator", 
+ "sdkVersion": "1.14", 
+ "staticArgs": {}, 
+ "verbose": false
+}
