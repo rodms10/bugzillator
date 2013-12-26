@@ -53,7 +53,10 @@
                 if (node.contentDocument) {
                     replaceBugs(aOptions, node.contentDocument.body);
                 }
-            } else if (node.nodeName == "A" && !node.hasAttribute(visitedProp)) {
+            } else if (node.nodeName == "A") {
+                if (node.hasAttribute(visitedProp))
+                    continue;
+
                 // Aldready existing anchor tag let's just add the pane if it matches.
                 node.setAttribute(visitedProp, "true");
                 
