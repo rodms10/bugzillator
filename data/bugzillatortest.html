@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+    <body onunload="document.getElementById('done').click()">
+        <h2>Bugzillator tests</h2>
+
+        <h3>Should Highlight</h3>
+        <div>text before bug 833192 text after</div>
+        <div>bug 833192 something later</div>
+        <div>the quick brown fox bug 833192</div>
+        <div>BuG 833192</div>
+        <div>Bug      833192</div>
+        <div>Bug833192</div>
+        <div>Bug #833192</div>
+        <div>Bug 833192!</div>
+        <div>Show me Bug 833192, ticket 936654 and issue 913609</div>
+        <div>I can <i>see bug 900000</i>, Bug 833192 <strong>and bug 936654</strong></div>
+        <div>I already have an anchor for <a href="#">bug 932520</a> right here, show me the pane</div>
+        <div>I already have an <a href="#">anchor for bug 932520 right here</a>. Pane please</div>
+
+        <h3>Shouldn't Highlight</h3>
+        <div>alBug833192</div>
+        <div>alBug 833192</div>
+        <div>Let's not <i>see bug</i> 900000</div>
+
+        <button id="done">Done</button>
+    </body>
+</html>

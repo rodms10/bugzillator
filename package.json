@@ -1,0 +1,21 @@
+{
+  "license":"",
+  "description":"Links to bugzilla everywhere.",
+  "contributors":[
+
+  ],
+  "author":"rsilveira",
+  "url":"https://github.com/rodms10/bugzillator",
+  "dependencies":[
+    "toolbarbutton-extended",
+    "bugzillaclient",
+    "api-utils",
+    "addon-kit"
+  ],
+  "version":"0.1",
+  "lib":"lib",
+  "fullName":"Bugzillator",
+  "main":"main",
+  "id":"jid0-p2FHQpTRD8B7Ryq3bLS0M6B7vo8",
+  "name":"bugzillator"
+}
